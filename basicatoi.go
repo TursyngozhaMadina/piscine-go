@@ -10,7 +10,7 @@ func BasicAtoi(s string) int {
 			z++
 		}
 		x = x * 10 + z
-	}		
-
+	}	
+		
 return x
 }

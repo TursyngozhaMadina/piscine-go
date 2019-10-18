@@ -1,16 +1,13 @@
-package main
-
-import "fmt"
+package piscine
 
 func BasicAtoi(s string) int {
-	var x int
-	for _, y := range s {
-		z := 0
-		for i := '1'; i < 'y'; i ++ {
-			z++
+	chislo := 0
+	for _, cifra := range s {
+		desyatok := 0
+		for i := '1'; i <= cifra; i++ {
+			desyatok++
 		}
-		x = x * 10 + z
-	}	
-		
-return x
+		chislo = chislo*10 + desyatok
+	}
+	return chislo
 }

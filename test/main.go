@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	arg := 4
-	fmt.Println(piscine.RecursiveFactorial(arg))
+	fmt.Println(piscine.FindNextPrime(5))
+	fmt.Println(piscine.FindNextPrime(4))
 }
 

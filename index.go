@@ -6,12 +6,12 @@ func Index(s string, toFind string) int {
 	n := 0
 	m := 0
 	for range str {
-		n++ 
-	}	
+		n++
+	}
 	for range c {
 		m++
-	}	
-	for i := 0; i <= n - m; i++ {
+	}
+	for i := 0; i <= n-m; i++ {
 		if toFind == s[i:i+m] {
 			return (i)
 		}

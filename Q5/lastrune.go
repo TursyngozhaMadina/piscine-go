@@ -6,6 +6,7 @@ func LastRune(s string) rune {
 
 	for i := range s {
 		count = i
+
 	}
 	return k[count]
 }

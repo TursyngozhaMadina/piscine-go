@@ -1,14 +1,19 @@
 package piscine
 
 func Index(s string, toFind string) int {
-	d := 0
+	str := []rune(s)
 	c := []rune(toFind)
-	for ind, book := range s {
-		if ind == ind {
-			d++
-		}
-		if c[0] == book && c[0] != 10 {
-			return ind
+	n := 0
+	m := 0
+	for range str {
+		n++ 
+	}	
+	for range c {
+		m++
+	}	
+	for i := 0; i <= n - m; i++ {
+		if toFind == s[i:i+m] {
+			return (i)
 		}
 	}
 	return -1

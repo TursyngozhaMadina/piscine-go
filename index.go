@@ -3,13 +3,13 @@ package piscine
 func Index(s string, toFind string) int {
 	d := 0
 	k := 0
-	c := []rune(toFind)
 	for i := range toFind {
 		if i == i {
 			k++
 		}
 	}
 	if k != 0 {
+		c := []rune(toFind)
 		for ind, book := range s {
 			if ind == ind {
 				d++
@@ -22,3 +22,4 @@ func Index(s string, toFind string) int {
 	}
 	return 0
 }
+

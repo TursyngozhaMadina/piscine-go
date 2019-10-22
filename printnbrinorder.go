@@ -5,20 +5,20 @@ import "github.com/01-edu/z01"
 func PrintNbrInOrder(n int) {
 	var k []int
 	if n == 0 {
-		k = append(k , n)
+		k = append(k, n)
 	}
 	index := 0
 	for n > 0 {
-		k = append(k , n%10)
+		k = append(k, n%10)
 		n = n / 10
-		index ++
+		index++
 	}
-	for i := 0; i < index; i++{
-		for j := i+1; j < index; j++ {
-			if k[i] > k[j]{
+	for i := 0; i < index; i++ {
+		for j := i + 1; j < index; j++ {
+			if k[i] > k[j] {
 				t := k[i]
-				k[i]=k[j]
-				k[j]=t
+				k[i] = k[j]
+				k[j] = t
 			}
 		}
 	}

@@ -53,5 +53,5 @@ func TrimAtoi(s string) int {
 			}
 		}
 	}
-	return 0
+	return num
 }

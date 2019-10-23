@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-	fmt.Println(piscine.ToLower("Hello! How are you?"))
+	fmt.Println(piscine.Capitalize("Hello! How are you? How+are+things+4you?"))
 }
 

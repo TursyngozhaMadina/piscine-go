@@ -1,9 +1,11 @@
 package main
 
-import ("fmt"
-		"os" )
+import (
+	"fmt"
+	"os"
+)
 
 func main() {
-	//arguments := os.Args 
+	//arguments := os.Args
 	fmt.Printf(os.Args[0])
 }

@@ -2,10 +2,10 @@ package piscine
 
 func IsLower(str string) bool {
 	//x := []rune(str)
-	n := true
+	n := false
 	for _, cat := range str {
-		if !(cat >= 'A' && cat <= 'Z' || cat >= 'a' && cat <= 'z') {
-			n = false
+		if cat >= 'A' && cat <= 'Z' || cat >= 'a' && cat <= 'z' {
+			n = true
 		}
 	}
 	return n

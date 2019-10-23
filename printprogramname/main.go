@@ -2,10 +2,11 @@ package main
 
 import (
 	"github.com/01-edu/z01.PrintRune"
-	"os"
+	//"os"
 )
 
 func main() {
+
 	arguments := os.Args
 
 	for _, i := range arguments[0] {

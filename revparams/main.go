@@ -11,7 +11,7 @@ func main() {
 	for range result {
 		count++
 	}
-	for i := count-1; i > 0; i-- {
+	for i := count - 1; i > 0; i-- {
 		for _, i2 := range result[i] {
 			z01.PrintRune(i2)
 		}

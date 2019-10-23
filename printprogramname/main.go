@@ -1,11 +1,16 @@
 package main
 
 import (
-	"fmt"
+	"github.com/01-edu/z01.PrintRune"
 	"os"
 )
 
 func main() {
-	//arguments := os.Args
-	fmt.Printf(os.Args[0])
+	arguments := os.Args
+
+	for _, i := range arguments[0] {
+
+		z01.PrintRune([i])
+	}
+	z01.PrintRune(10)
 }

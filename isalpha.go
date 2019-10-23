@@ -8,7 +8,9 @@ func IsAlpha(str string) bool {
 		counter++
 	}
 	for i := 0; i <= counter-1; i++ {
-		if x[i] == ' ' {
+		if re && (x[i] >= 'a' && x[i] <= 'z') || (x[i] >= '1' && x[i] <= '9') || (x[i] >= 'A' && x[i] <= 'Z') {
+			re = true
+		} else {
 			re = false
 		}
 	}

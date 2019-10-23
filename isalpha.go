@@ -3,7 +3,7 @@ package piscine
 func IsAlpha(str string) bool {
 	x := []rune(str)
 	counter := 0
-	n := true
+	n := false
 	for range x {
 		counter++
 	}

@@ -8,7 +8,7 @@ func IsAlpha(str string) bool {
 		counter++
 	}
 	for i := 0; i <= counter-1; i++ {
-		if n && (x[i] >= 33 && x[i] <= 47) {
+		if n && (x[i] >= 0 && x[i] <= 47) {
 			n = false
 		} else if n && (x[i] >= 58 && x[i] <= 64) {
 			n = false

@@ -5,7 +5,7 @@ import (
 	"os"
 )
 
-func BasicAtoi(s string) int  {
+func BasicAtoi(s string) int {
 	x := 0
 	for _, cifra := range s {
 		if '0' <= cifra && cifra <= '9' {
@@ -43,7 +43,7 @@ func main() {
 			if num == -1 {
 				z01.PrintRune(' ')
 			} else {
-				if !flagupper  {
+				if !flagupper {
 					z01.PrintRune(rune('a' + num - 1))
 					//z01.PrintRune(rune('a' + num -32))
 				} else {

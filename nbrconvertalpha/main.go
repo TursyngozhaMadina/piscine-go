@@ -30,10 +30,10 @@ func main() {
 	pos := 1
 	flagupper := false
 	c := 0
-	//for range arg {
-	//	c++
-	//}
-	if arg[2] == "--upper" {
+	for range arg {
+		c++
+	}
+	if c >= 2 && arg[1] == "--upper" {
 		pos = 1
 		flagupper = true
 	}
@@ -43,11 +43,11 @@ func main() {
 			if num == -1 {
 				z01.PrintRune(' ')
 			} else {
-				if flagupper {
-					z01.PrintRune(rune('a' + num -32))
+				if !flagupper  {
+					z01.PrintRune(rune('a' + num - 1))
 					//z01.PrintRune(rune('a' + num -32))
 				} else {
-					z01.PrintRune(rune('A' + num - 32))
+					z01.PrintRune(rune('A' + num - 1))
 					//z01.PrintRune(rune('A' + num - 32))
 				}
 			}

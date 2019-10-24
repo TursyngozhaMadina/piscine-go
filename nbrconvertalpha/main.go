@@ -27,7 +27,7 @@ func BA(s string) int {
 
 func main() {
 	arg := os.Args
-	pos := 1 
+	pos := 1
 	flagupper := false
 	c := 0
 	for range arg {

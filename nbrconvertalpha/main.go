@@ -5,12 +5,12 @@ import (
 	"os"
 )
 
-func BA(s string) int {
+func BasicAtoi(s string) int  {
 	x := 0
-	for _, i := range s {
-		if '0' <= i && i <= '9' {
+	for _, cifra := range s {
+		if '0' <= cifra && cifra <= '9' {
 			z := 0
-			for k := '1'; k <= i; k++ {
+			for k := '1'; k <= cifra; k++ {
 				z++
 			}
 			x = x*10 + z
@@ -30,23 +30,25 @@ func main() {
 	pos := 1
 	flagupper := false
 	c := 0
-	for range arg {
-		c++
-	}
-	if c >= 2 && arg[1] == "--upper " {
+	//for range arg {
+	//	c++
+	//}
+	if arg[2] == "--upper" {
 		pos = 1
 		flagupper = true
 	}
 	for index, k := range arg {
 		if index >= pos {
-			num := BA(k)
+			num := BasicAtoi(k)
 			if num == -1 {
 				z01.PrintRune(' ')
 			} else {
-				if !flagupper {
-					z01.PrintRune(rune('a' + num - 1))
+				if flagupper {
+					z01.PrintRune(rune('a' + num -32))
+					//z01.PrintRune(rune('a' + num -32))
 				} else {
-					z01.PrintRune(rune('A' + num - 1))
+					z01.PrintRune(rune('A' + num - 32))
+					//z01.PrintRune(rune('A' + num - 32))
 				}
 			}
 		}
